@@ -37,7 +37,6 @@ function updateButtons() {
 
 function nextStep(step: number) {
 
-    console.log('debug count = ', count);
     let index = count - 1;
 
     if (index >= 0 && lessons[index].active) {
@@ -47,7 +46,6 @@ function nextStep(step: number) {
 
     count += step;
     index += step;
-    console.log('starting with lesson ', count);
 
     lessons[index].active = true;
     lessons[index].init();
