@@ -40,8 +40,8 @@ export class FourthLesson implements LessonInterface {
 }
 
 /**
- * RXJS COMMON OPERATORS ADVANCED: COMBINATION
- * combination operators join data from multiple observables
+ * RXJS PIPE MULTIPLE OPERATORS
+ * pipe can join multiple operators together
  * interval is a creation operator that starts emitting values from 0 & increments every second
  * take is a filtering operator which will take only the first n emissions
  */

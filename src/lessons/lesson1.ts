@@ -16,34 +16,31 @@ export class FirstLesson implements LessonInterface {
 
     lesson() {
         console.log('this is lesson 1');
+        const arr = [1,2,3,4,5];
+        console.log('original array: ', arr);
         
         // multiply each member of array by 3
-        const arr = [1,2,3,4,5];
-        const prods = [];
-        arr.map((item: number, index: number) => {
-            item *= 3;
-            prods.push(item);
-            console.log(item, index);
+        const prods = arr.map((item: number) => {
+            return item * 3;
         });
-        console.log(prods);
+        console.log('map on array: ', prods);
     
         console.log('------------------');
         
         // get product of all elements added with their index starting from constant 4
         const prod = arr.reduce((prev: number, curr: number, index: number) => {
-            console.log(prev, curr, index);
-            return (prev * curr) + index;
+            console.log('current status: ', prev, curr, index);
+            return prev * (curr + index);
         }, 4);
-        console.log(prod);
+        console.log('reduced array: ', prod);
     
         console.log('------------------');
         
         // filter through arr to find elements that are even
         const results = arr.filter((item: number, index: number) => {
-            console.log(item, index);
             return item % 2 === 0;
         });
-        console.log(results);
+        console.log('filtered array: ', results);
     
         console.log('------------------');
     }

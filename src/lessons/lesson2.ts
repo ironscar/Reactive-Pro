@@ -70,5 +70,5 @@ export class SecondLesson implements LessonInterface {
  * subscribing again creates a new subscriber and so they need to be explicitly closed
  * this is often called unicasting which means that flow is unidirectional
  * can have multiple observers for one observable
- * observables don't care about subscribers, they just emit and all subsctibers get it
+ * observables don't care about subscribers, they just emit and all subscribers get it
  */
